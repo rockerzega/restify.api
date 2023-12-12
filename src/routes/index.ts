@@ -9,6 +9,7 @@ router.get('/', (req: Request, res: Response, next: Next) => {
     name: 'api-restify',
     versino: '0.0.1',
     description: 'Api de pruebas',
+    host: req.headers.host,
   })
   next()
 })
